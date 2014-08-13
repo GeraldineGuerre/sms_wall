@@ -51,7 +51,7 @@ h1 { font-size: 1em; font-weight: bold; font-style: italic; color: #919191; text
 #qrcode a, #qrcode a:visited, #qrcode a:link { color: #000; }
 #qrcode a:hover, #qrcode a:focus, #qrcode a:active { color: #313131; }
 
-h2 { width:580px; margin-top: 30px; padding: 25px 10px; box-shadow: 0 5px 3px rgba(0, 0, 0, 0.4); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 1.3em; font-weight: bold; text-align: center; }
+h2 { width:380px; margin-left: 100px; margin-top: 200px; margin-bottom: -195px;padding: 25px 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 1.3em; font-weight: bold; text-align: center; }
 
 
 /**************************/
@@ -60,16 +60,21 @@ h2 { width:580px; margin-top: 30px; padding: 25px 10px; box-shadow: 0 5px 3px rg
 
 /* Couleurs des liens */
 a, a:visited, a:link { font-weight: bold; color: #919191; }
-a:hover, a:focus, a:active { color: #000; text-decoration: underline; }
+a:hover, a:focus, a:active { color: #dbf836 !important; text-decoration: none; -webkit-transition: color 1s ease;
+-moz-transition: color 1s ease;
+-ms-transition: color 1s ease;
+-o-transition: color 1s ease;
+transition: color 1s ease;}
 
 /* Couleur et image du fond de la page */
-body { background: #dbf836 url(background.jpg) fixed repeat-x left 25px; }
+body { background: #919191 url(background.jpg) fixed repeat-x left 25px; }
 
 /* Logo Petits Deb + fond du bandeau */
 #bandeau { background: #313131 url(apd.png) no-repeat right center; }
 
 /* Titre */
 h2 { background-color: #000; color: #fff; }
+h2:hover {background-color: #313131; color: #dbf836 ; width:480px; transition:1s;}
 
 
 
@@ -78,8 +83,9 @@ h2 { background-color: #000; color: #fff; }
 /*******************/
 
 /*  Acceder au nuage  */
-#voirnuage { display: block; width: 50%; background-color: #313131; color: #fff; margin: 80px auto 10px auto; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: .8em; text-align: center; }
+#voirnuage { display: block; width: 45%; background-color: #313131; color: #fff; margin: 80px auto 10px auto; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: .8em; text-align: center; }
 a#voirnuage, a#voirnuage :visited, a#voirnuage:link  { color: #fff; }
+#voirnuage:hover {background-color: #000; transition:1s; width: 55%;}
 
 /*  Messages  */
 #messages { margin-top: 180px; }
